@@ -7,6 +7,7 @@ RUN echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/re
      bash
 
 COPY conf /etc/dovecot
+COPY conf/dovecot-sql.conf.ext /etc/dovecot/dovecot-sql.conf.ext
 COPY sieve /var/lib/dovecot
 
 COPY start.sh /start.sh
